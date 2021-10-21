@@ -23,6 +23,14 @@ repositories {
 }
 
 dependencies {
+    runtimeOnly("org.mariadb.jdbc:mariadb-java-client:2.7.4")
+    implementation("org.ktorm:ktorm-core:3.4.1")
+    implementation("org.ktorm:ktorm-support-mysql:3.4.1")
+
+    implementation("com.viartemev:ktor-flyway-feature:1.3.0") {
+        exclude("ch.qos.logback", "logback-classic")
+    }
+    implementation("com.zaxxer:HikariCP:5.0.0")
     implementation("io.ktor:ktor-server-core:$ktor_version")
     implementation("io.ktor:ktor-auth:$ktor_version")
     implementation("io.ktor:ktor-auth-jwt:$ktor_version")

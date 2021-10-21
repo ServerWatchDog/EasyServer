@@ -1,6 +1,5 @@
 package i.watch
 
-import i.watch.plugins.configureRouting
 import io.ktor.http.HttpMethod
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.testing.handleRequest
